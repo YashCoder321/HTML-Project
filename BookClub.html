@@ -1,11 +1,244 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Mount Caramel Book Club.</title>
+<head>  
+    <link rel='stylesheet' href='style.css' type="text/css">
+
+<!-- font sytle -->
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+    body {
+/* Fist Lesson */
+background-color: #eeeeee ;
+    }
+    header {
+        /* Fist Lesson */
+background-color: brown ;
+    }
+    nav {
+        /* Fist Lesson */
+background-color: aquamarine ;
+ /* Fourth Lesson */
+ position: sticky;
+ top: 0;
+ z-index: 2;
+ /* Fifth Lesson */
+ display: flex;
+ justify-content: center;
+    }
+    #intro {
+        /* Fist Lesson */
+background-color: pink ;
+/* Second Lesson */
+font-family: Arial, Helvetica, sans-serif;
+/* Third Lesson */
+text-align: center;
+    }
+    .main-section-content h2 {
+        /* Fist Lesson */
+background-color: darkkhaki ;
+/* Second Lesson */
+font-family: Arial, Helvetica, sans-serif;
+/* Third Lesson */
+padding: 5px;
+font-size: 24px;
+text-align: center;
+margin-bottom: 50px;
+    }
+    #bestsellers , footer {
+        /* Fist Lesson */
+background-color: lightyellow ;
+    }
+    header, nav, #inro, #main-section, #bestsellers,footer {
+        /* Fist Lesson */
+border : 1px solid, black ;
+    }
+    header, nav, #main-section {
+        /* Fist Lesson */
+border-radius : 10px ;
+    }
+     header h1 {
+        /* Fist Lesson*/
+color : white ;
+/* Second Lesson */
+font-size: 50px ;
+font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+        /* Fist Lesson */
+color: white ;
+/* Second Lesson */
+font-size: 50px ;
+font-family: Arial, Helvetica, sans-serif;
+/* Third Lesson */
+margin: 30px;
+    }
+    h2 ,p {
+        /* Fist Lesson */
+color : #333333 ;
+    }
+    table, th, td {
+        /* Fist Lesson */
+border : 1px solid, black ;
+    }
+    tr:last-child {
+        /* First Lesson */
+        color: red;
+    }
+    span {
+        /* Fist Lesson */
+color : blue ;
+    }
+    footer p,first-child {
+        /* Fist Lesson */
+border : 1px solid, red ;
+    }
+    .teacher-info {
+        /* Fist Lesson */
+border :ipx, solid ;
+border-radius: 5px ;
+    /* Third Lesson */
+    margin : 30px;
+    width: 400px ;
+    box-shadow:6px 0px 21px -3px #333333;
+    /* Fifth Lesson */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    button {
+        /* Fist Lesson */
+background-color : red ;
+color: white ;
+/* Second Lesson */
+font-size: 20px ;
+font-weight: bold ;
+/* Third Lesson */
+padding: 5px;
+border-radius: 5px;
+border: none;
+ /* Fourth Lesson */
+position: fixed;
+right: 50px;
+bottom: 40px;
+ 
+    }
+    /* Second Lesson */
+    ul {
+        list-style-type: none;
+    }
+    li a {
+        text-decoration: none;
+        color: 333333;
+        font-size: 20px;
+        font-weight:600 ;
+    }
+    li a:hover {
+        color: red;
+    }
+    p {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: underline;
+    }
+    /* Third Lesson */
+    nav li {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid;
+border-radius: 5px;
+    }
+    .teacher-info div:last-child{
+        margin-left: 50px;
+    }
+    .main-section-content{
+        padding: 20px;
+    }
+table{
+    margin: auto;
+}
+th,td{
+    padding: 10px;
+}
+footer{
+    padding: 20px;
+     /* Fifth Lesson */
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+#best-sellers h2{
+    padding: 20px;
+}
+ol li {
+    margin-bottom: 20px;
+}
+ /* Fourth Lesson */
+ #book-reviews p,
+ #book-reviews h3 {
+    position: relative;
+    left:40%;
+    width: 400px;
+ }
+ #videos div {
+    display: flex;
+justify-content: space-around;
+ }
+ #teachers{
+    display: flex;
+justify-content: center;
+align-items: center;
+ }
+ nav ul {
+    display: flex;
+justify-content: space-between;
+
+ }
+ header{
+    grid-area: header;
+ }
+ nav{
+    grid-area: nav;
+ }
+ #intro{
+    grid-area: intro;
+ }
+ #main-section{
+    grid-area: main-section;
+ }
+ #bestsellers{
+    grid-area: bestsellers;
+ }
+ footer{
+    grid-area: footer;
+ }
+ .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas: 
+    "header header header header intro"
+    "nav nav nav nav intro"
+    "main-section main-section main-section main-section bestsellers"
+    "footer footer footer footer footer";
+ }
+</style>
 </head>
 <body>
+    <div class="grid-container">
     <!--heading-->
+    <header>
     <h1>Mount Caramel Book Club</h1>
+    <img src="image 1.jpeg"alt="library image"width="100%" Height="400px">
+</header>
+<nav>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="https://idriesshahfoundation.org/book-childrens-book/"target="_blank"> Online
@@ -13,22 +246,48 @@
 <li><a href="#">Reading Groups</a></li>
 <li><a href="#">Contact Us</a></li>
     </ul>
+    </nav>
     <!--intro-->
+    <div id="intro">
     <h2>Welcome To Mount Caramel Book Club</h2>
+    
     <p> The Mount Caramel Book Club Is An Online Communuity Of Book readers In Mount Caramel School</p>
+    </div>
+    <!--Main Section-->
+    <div id="main-section">
     <!--Content-1-->
+    <div class="main-section-content">
     <h2> Meet Our Teachers</h2>
+    <div id="teachers">
+        <div class="teacher-info">
+            <div>
+    <img src="image 2.jpg"alt="library image"width="300px" height="300px">
+    </div>
+    <div>
     <h3>Ms. Emma</h3>
-    <p> She Teaches Elementry School Kids. She Has A <i>Bachelors degree in elementry education</i></p>
+    <p> She Teaches Elementry School Kids. She Has A <i>Bachelors </i>degree in elementry education</i></p>
+    </div>
+    </div>
+    <div class="teacher-info">
+        <div>
+    <img src="image 4.webp"alt="library image"width="300px" height="300px">a
+        </div>
+    <div>
     <h3>Ms. Caroline</h3>
 
 <p>She Teaches Secondry School And High School Kids. She Has A <i>Master Of Arts</i></p>
+    </div>
+    </div>
+    </div>
+    </div>
 <!--Content-2-->
+<div id="book-reviews" class="main-section-content">
 <h2>Review</h2>
 <h3>Alice In The Wonderland.</h3>
 
 <p><strong>Amit:</strong><q>I Loved Reading This Book. A Must Read For Everyone</q></p>
 <p><strong>Shekhar:</strong><q>Really Enjoyed Reading This Book</q></p>
+</div>
 <!--contact-3(table)-->
 <h2>Opening timings</h2>
 <table>
@@ -55,13 +314,21 @@
     <tr>
         <th>Saturday</th>
         <td>11 am- 1 pm</td>
-    </tr>
+    </tr> 
     <tr>
         <th>Sunday</th>
         <td>Closed</td>
     </tr>
 </table>
+<div id="videos" class="main-section-content">
+<h1>Related Videos</h1>
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gS7YKaPcg3Q?si=n6AxNUn9w9TLW72F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yykVNwyrz1k?si=qPyjzjYtvPpNCJm_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
 <!--BestSeller Section-->
+<div id="bestsellers">
 <h2>Best Sellers</h2>
 <ol>
 <li><b>Charlie And Chocolate Factory.</b><em>Roald Dahl</em><br></li>
@@ -69,9 +336,11 @@
 <li><b>The Little Princess</b><em>Antoine De Saint</em><br></li>
 <li><b>Where The Wild Things Are</b><em>Maurice Sendak</em><br></li>
 </ol>
+</div>
 <!--Contact Info-->
 <p>Contact Us: Ms. Caroline</p>
 <p>Phone No.: +1124533</p>
 <address>36th Main,Palm Street, Delhi-36035</address>
+    </div>
 </body> 
 </html>
